@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.second-container-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #f9fafb;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 54px;
+    padding-left: 45px;
+    padding-right: 300px;
+    margin-bottom: -33px;
+}
+
+/* Form Container  */
+
+
+/* First Name */
+.form-container .first-name {
+    display: flex;
+    flex-direction: column;
+    padding-right: 12em;
+    padding-bottom: 2em;
+}
+
+/* Last Name */
+.form-container .last-name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Making it on the same line  */
+.form-container .name {
+    display: flex;
+}
+
+/* Changing the size of the input text bar  */
+.form-container input {
+    width: 130%; /* Adjust this percentage as needed */
+    max-width: 300px; /* Optional: Limit the width further */
+    padding: 3px; /* Optional: Add padding for better appearance */
+    box-sizing: border-box;
+    padding-left: 6px;
+}
+
+input {
+    border: 2px solid rgb(223 221 221); /* Sets border to a solid color */
+}
+
+
+/* Email */
+.form-container .email {
+    display: flex;
+    flex-direction: column;
+    padding-right: 12em;
+    padding-bottom: 2em;
+}
+
+/* Phone Number */
+.form-container .phone-num {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Making it on the same line  */
+.form-container .personal-data {
+    display: flex;
+}
+
+/* Password */
+.form-container .my-password {
+    display: flex;
+    flex-direction: column;
+    padding-right: 12em;
+    padding-bottom: 2em;
+}
+
+/* Confirm Password */
+.form-container .confirm-password {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Making it on the same line  */
+.form-container .password {
+    display: flex;
+}
+
+.form-container {
+    margin-left: 3em;
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(94, 95, 96);
+}
+
+.form-container p {
+    font-size: 23px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    font-weight: 500;
+    color: black;
+}
+
+/* Sign up Container  */
+
+.signup-container {
+    height: 31vh;
+    background-color: rgb(244, 243, 243);
+}
+
+
+.signup-button {
+    margin-left: 2em;
+    padding-top: 35px;
+}
+
+.signup-button button {
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    background: #596D48;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #4b5e3c; /* Changes color on hover */
+}
+
+.para {
+    margin-left: 2em;
+    padding-top: 30px;
+}
+
+.para a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: 700;
+}
+
+.shadow {
+    background-color: #f0f0f0; /* Background color of the div */
+    border: 1px solid #ccc; /* Optional: border for better visibility */
+    box-shadow: 0px 4px 12px 8px rgba(171, 169, 169, 0.5); /* Single line shadow */
+    margin-top: 5px;
+}
+
+
