@@ -7,6 +7,7 @@ body{
     display: flex;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 98.8vw;
 }
 
 .second-container-text {
@@ -59,6 +60,20 @@ input {
     border: 2px solid rgb(223 221 221); /* Sets border to a solid color */
 }
 
+/* Invalid input when focused */
+input:focus:invalid {
+    border-color: red !important;
+    outline: none; /* Removes default outline */
+  }
+  
+  /* Valid input when focused */
+  input:focus:valid {
+    border-color: blue !important;
+    outline: none; /* Removes default outline */
+  }
+
+  
+
 
 /* Email */
 .form-container .email {
@@ -107,19 +122,31 @@ input {
 }
 
 .form-container p {
-    font-size: 23px;
+    font-size: 13px;
     letter-spacing: 1px;
     padding-bottom: 20px;
     font-weight: 500;
     color: black;
+    position: relative;
+    right: 33.5vw;
+    bottom: -45px;
 }
 
+.lets {
+    position: absolute;
+    left: 1px;
+    top: -23px;
+    font-size: 23px;
+}
 /* Sign up Container  */
 
 .signup-container {
     height: 31vh;
     background-color: rgb(244, 243, 243);
+    margin-left: -42px;
+    padding-left: 15px;
 }
+
 
 
 .signup-button {
@@ -154,10 +181,73 @@ button:hover {
 }
 
 .shadow {
-    background-color: #f0f0f0; /* Background color of the div */
-    border: 1px solid #ccc; /* Optional: border for better visibility */
-    box-shadow: 0px 4px 12px 8px rgba(171, 169, 169, 0.5); /* Single line shadow */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 12px 8px rgba(171, 169, 169, 0.5);
     margin-top: 5px;
+    margin-left: -45px;
 }
+
+
+/* Putting the Odin logo on top of the image */
+
+.image-container {
+    position: relative;
+    width: fit-content;
+}
+
+.background-image {
+    display: block;
+}
+
+.odin-image {
+    position: absolute;
+    top: 100px;
+    left: -8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(12 12 12 / 43%);
+    padding: 10px;
+    padding-right: 10vw;
+    padding-left: 12vw;
+}
+
+
+.overlay-image {
+    height: 110px; /* Adjust as needed */
+}
+
+.overlay-image  {
+    color: white;
+}
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('Norse-Bold.otf') format('opentype');
+}
+
+.odin-image p {
+    font-family: 'MyCustomFont';
+    font-size: 70px;
+}
+
+.last-text {
+    position: absolute;
+    bottom: -59px;
+    left: 33%;
+    color: rgba(255, 255, 255, 0.686);
+    font-size: 12px;
+}
+
+.last-text a {
+    color: rgba(255, 255, 255, 0.686);
+}
+
+
+
 
 

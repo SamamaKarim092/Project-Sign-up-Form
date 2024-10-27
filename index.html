@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
 </head>
+
 <body>
 
     <!-- Image Container -->
     <div class="image-container">
         <div class="image">
-            <img src="halie-west-25xggax4bSA-unsplash.jpg" height="803px" alt="">
+            <img src="halie-west-25xggax4bSA-unsplash.jpg" class="background-image" height="803px" alt="">
+            <div class="odin-image">
+                <img src="odin-lined.png" class="overlay-image" height="100px" alt="">
+                <p>ODIN</p>
+            </div>
+            <div class="last-text">
+                <p>Photo by <a href="">Halie West</a> on <a href=""> Unsplash</a></p>
+            </div>
         </div>
     </div>
 
     <!-- Text Container  -->
     <div class="container">
         <div class="second-container-text">
-            This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams.
             <br> Sign up now to get started.
             <br><br> You know you want to.
         </div>
-        
+
         <!-- Form Container  -->
         <div class="form-container">
-            <p>Let's do this!</p>
-            <form action="#" method="post">
+            <p style="font-size: 20px;"class="lets">Let's do this!</p>
+            <form action="#" method="post" onsubmit="return validatePasswords()">
                 <!-- Name Fields -->
-                 <div class="name">
-                     <div class="first-name">
-                         <label for="first_name">FIRST NAME</label>
-                         <input type="text" name="first_name" id="first_name" >
-                     </div>
-                     <div class="last-name">
-                         <label for="last_name">LAST NAME</label>
-                         <input type="text" name="last_name" id="last_name" >
-                     </div>
-                   </div>
+                <div class="name">
+                    <div class="first-name">
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" required minlength="3">
+                    </div>
+                    <div class="last-name">
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </div>
+                </div>
                 <!-- Personal Data Fields -->
                 <div class="personal-data">
                     <div class="email">
                         <label for="user_email">EMAIL</label>
-                        <input type="email" id="user_email" name="email">
+                        <input type="email" id="user_email" name="email" required>
                     </div>
                     <div class="phone-num">
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <input type="tel" id="phone" name="phone"required>
                     </div>
                 </div>
                 <!-- Password Fields -->
-                 <div class="password">
-                     <div class="my-password">
-                         <label for="user_password">PASSWORD</label>
-                         <input type="password" id="user_password" name="password">
-                     </div>
-                     <div class="confirm-password">
-                         <label for="user_password_confirm">CONFIRM PASSWORD</label>
-                         <input type="password" id="user_password_confirm" name="password">
-                     </div>
-                 </div>
+                <div class="password">
+                    <div class="my-password">
+                        <label for="user_password">PASSWORD</label>
+                        <input type="password" id="user_password" name="password" required>
+                    </div>
+                    <div class="confirm-password">
+                        <label for="user_password_confirm">CONFIRM PASSWORD</label>
+                        <input type="password" id="user_password_confirm" name="password_confirm" required>
+                    </div>
+                    <p id="message" style="color: red;"></p> <!-- Message for password validation -->
+                </div>
+
+
+                <div class="shadow"></div>
+
+                <!-- Sign up Container  -->
+                <div class="signup-container">
+                    <div class="signup-button">
+                        <button type="submit">Create Account</button>
+                    </div>
+                    <div class="para">
+                        Already have an account? <a href="#">Log in</a>
+                    </div>
+                </div>
             </form>
         </div>
 
-        <div class="shadow"></div>
-
-        <!-- Sign up Container  -->
-
-        <div class="signup-container">
-            <div class="signup-button">
-                <button>Create Account</button>
-            </div>
-            <div class="para">
-                Already have an account? <a href="#">Log in</a>
-            </div>
-        </div>
-    </div>
+        <script src="script.js"></script> <!-- Your JS file -->
 </body>
 
-
-    <script src="script.js"></script>
-</body>
 </html>
