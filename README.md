@@ -6,5 +6,5 @@ Things I learned by making this project is
 2. The use of requird , min , max in term of length of of username.
 3. I got better in use of Flexbox.
 4. Putting image on to the image.
-5. The Use of personal Font.
+5. The use of personal made Font.
  
